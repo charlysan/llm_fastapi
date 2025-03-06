@@ -3,6 +3,9 @@
 
 This is a simple FastAPI application that generates AWS CLI commands based on user requests using OpenAI or Ollama LLMs.
 
+
+![web](./img/web.gif)
+
 ## Prerequisites
 
 - Docker and Docker Compose installed on your machine.
