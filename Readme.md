@@ -111,14 +111,19 @@ Response:
 
 After creating all files, your directory should look like this:
 
+```
 .
-├── main.py
 ├── Dockerfile
-├── docker-compose.yml
+├── LICENSE
+├── Readme.md
+├── docker-compose.yaml
+├── img
+│   └── web.gif
+├── main.py
 ├── requirements.txt
-└── README.md
-
----
+└── templates
+    └── index.html
+```
 
 ### Testing the App
 
