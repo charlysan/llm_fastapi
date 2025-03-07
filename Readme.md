@@ -196,7 +196,10 @@ This endpoint will receive a json payload:
     "request": "<user_request>"
 }
 
-<user_request> is a text, a ticket created by some user asking for certain AWS access (for example the user asks to access S3 for resource for bucket /media). You should take that text and hit openai or ollama (use python Requests), and the llm should return the aws-cli command that the admin should run to accomplish that.
+<user_request> is a text, a ticket created by some user asking for certain AWS access 
+(for example the user asks to access S3 for resource for bucket /media). 
+You should take that text and hit openai or ollama (use python Requests), 
+and the llm should return the aws-cli command that the admin should run to accomplish that.
 The endpoint should return a json response like this:
 
 {
@@ -207,5 +210,9 @@ The endpoint should return a json response like this:
     "notes": "extra notes if available"
 }
 
-Add a configurable prompt for the llm that takes into account the AWS account_id, user_iam_id, aws_region. Add env var for openai_token, ollama_base_url, openai_base_urlCreate a single python file with everything, a dockerfile that uses python apline image, and a docker-compose file that I can use to run the app. The app should use port 8086. Add a readme.md file with simple instructions on how to run the app.
+Add a configurable prompt for the llm that takes into account the AWS account_id, 
+user_iam_id, aws_region. Add env var for openai_token, ollama_base_url, openai_base_url. 
+Create a single python file with everything, a dockerfile that uses python apline image, 
+and a docker-compose file that I can use to run the app. The app should use port 8086. 
+Add a readme.md file with simple instructions on how to run the app.
 ```
